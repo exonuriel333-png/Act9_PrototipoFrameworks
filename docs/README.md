@@ -4,10 +4,10 @@ Prototipo Front-End navegable desarrollado para la Actividad 9.
 CUMARA es una aplicación web responsiva diseñada para coordinar viajes compartidos de forma comunitaria.
 
 ## Integrantes y Roles
-* Axel Aaron Cortés Ramírez**: [Tu Rol, ej. Coordinador y Documentación]
-* Exon Uriel Estrada Calderón**: [Rol, ej. Desarrollador Front-End 1]
-* Miguel Angel Piña Ramirez**: [Rol, ej. Desarrollador Front-End 2]
-* Carlos Roberto Manriquez Vazquez**: [Rol, ej. Lider agil]
+* Carlos Roberto Manriquez Vazquez (Rol: Lider agil)
+* Miguel Angel Piña Ramirez (Rol: Diseñador UX/UI)
+* Axel Aaron Cortés Ramírez (Rol: Desarrollador Front-End 1)
+* Exon Uriel Estrada Calderón (Rol: Desarrollador Front-End 2)
 
 ## Vistas
 1. index.html - Inicio de sesión
