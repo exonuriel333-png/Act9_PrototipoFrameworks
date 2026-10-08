@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi perfil - CUMARA</title>
+        <link rel="icon" href="../FAVICON/favicon.ico">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/main.js" defer></script>
+    </head>
+<body>
+    <div class="app-shell">
+        <button class="mobile-toggle" aria-label="Abrir menú">☰</button>
+        <div class="overlay"></div>
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-mark">🚗</span>
+                <span>CUMARA</span>
+            </div>
+            <nav>
+                <div class="nav-list"><a class="nav-link" href="dashboard.html">
+                    <span class="nav-icon">⌂</span>Inicio</a>
+                    <a class="nav-link" href="buscar-viajes.html">
+                        <span class="nav-icon">⌕</span>Buscar viaje
+                    </a>
+                    <a class="nav-link" href="publicar-viaje.html">
+                        <span class="nav-icon">＋</span>Publicar viaje
+                    </a>
+                    <a class="nav-link" href="mis-viajes.html">
+                        <span class="nav-icon">▣</span>Mis viajes
+                    </a>
+                    <a class="nav-link" href="notificaciones.html">
+                        <span class="nav-icon">♧</span>Notificaciones
+                    </a>
+                    <a class="nav-link active" href="mi-perfil.html">
+                        <span class="nav-icon">●</span>Mi perfil
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">⚙</span>Configuración
+                    </a>
+                </div>
+                <div class="nav-separator"></div>
+                <div class="nav-bottom">
+                    <a class="nav-link" href="index.html">
+                        <span class="nav-icon">↪</span>Cerrar sesión
+                    </a>
+                </div>
+            </nav>
+        </aside>
+        <div class="main-wrap">
+            <header class="topbar">
+                <strong class="topbar-title">Mi perfil</strong>
+                <div class="topbar-actions">
+                    <button class="icon-btn" onclick="location.href='notificaciones.html'" aria-label="Notificaciones">♧</button>
+                    <div class="user-chip">
+                        <span class="avatar">M</span>
+                        <span class="user-meta">
+                            <strong>Nombre</strong>
+                            <small>Pasajero ▾</small>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-head">
+                    <div>
+                        <h1>Mi perfil</h1>
+                        <p>Gestiona tu información personal.</p>
+                    </div>
+                </div>
+                <div class="profile-grid">
+                    <aside class="profile-aside">
+                        <div class="profile-big-avatar">M</div>
+                        <h2>Nombre</h2>
+                        <p>Pasajero</p><br>
+                        <button class="btn-neutro btn-small" type="button">Cambiar foto</button>
+                    </aside>
+                    <section class="card">
+                        <form id="profileForm">
+                            <div class="profile-form-grid">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre completo</label>
+                                    <input id="nombre" name="nombre" type="text" value="Nombre">
+                                </div>
+                                <div class="form-group">
+                                    <label for="correo">Correo electrónico</label>
+                                    <input id="correo" name="correo" type="email" value="nombre@correo.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="telefono">Teléfono</label>
+                                    <input id="telefono" name="telefono" type="tel" value="477 000 0000">
+                                </div>
+                                <div class="form-group">
+                                    <label for="tipo">Tipo de usuario</label>
+                                    <select id="tipo" name="tipo">
+                                        <option>Pasajero</option>
+                                        <option>Conductor</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full">
+                                    <label for="info">Información adicional (opcional)</label>
+                                    <textarea id="info" name="info" placeholder="Cuéntanos algo sobre ti."></textarea>
+                                </div>
+                            </div>
+                            <div class="form-actions">
+                                <button class="btn-principal" type="submit">Guardar cambios</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

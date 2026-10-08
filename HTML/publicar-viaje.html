@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Publicar viaje - CUMARA</title>
+        <link rel="icon" href="../FAVICON/favicon.ico">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/main.js" defer></script>
+    </head>
+<body>
+    <div class="app-shell">
+        <button class="mobile-toggle" aria-label="Abrir menú">☰</button>
+        <div class="overlay"></div>
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-mark">🚗</span>
+                <span>CUMARA</span>
+            </div>
+            <nav>
+                <div class="nav-list">
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">⌂</span>Inicio
+                    </a>
+                    <a class="nav-link" href="buscar-viajes.html">
+                        <span class="nav-icon">⌕</span>Buscar viaje
+                    </a>
+                    <a class="nav-link active" href="publicar-viaje.html">
+                        <span class="nav-icon">＋</span>Publicar viaje
+                    </a>
+                    <a class="nav-link" href="mis-viajes.html">
+                        <span class="nav-icon">▣</span>Mis viajes
+                    </a>
+                    <a class="nav-link" href="notificaciones.html">
+                        <span class="nav-icon">♧</span>Notificaciones
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">●</span>Mi perfil
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">⚙</span>Configuración
+                    </a>
+                </div>
+                <div class="nav-separator"></div>
+                <div class="nav-bottom">
+                    <a class="nav-link" href="index.html">
+                        <span class="nav-icon">↪</span>Cerrar sesión
+                    </a>
+                </div>
+            </nav>
+        </aside>
+        <div class="main-wrap">
+            <header class="topbar">
+                <strong class="topbar-title">Publicar viaje</strong>
+                <div class="topbar-actions">
+                    <button class="icon-btn" onclick="location.href='notificaciones.html'" aria-label="Notificaciones">♧</button>
+                    <div class="user-chip">
+                        <span class="avatar">C</span>
+                        <span class="user-meta">
+                            <strong>Nombre</strong>
+                            <small>Conductor ▾</small>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-head">
+                    <div>
+                        <h1>Publicar viaje</h1>
+                        <p>Comparte tu ruta y ayuda a más personas a viajar.</p>
+                    </div>
+                </div>
+                <div class="publish-grid">
+                    <section class="card">
+                        <form action="dashboard.html" method="get" data-demo-form data-redirect="dashboard.html" data-message="Viaje publicado correctamente.">
+                            <div class="form-grid-2">
+                                <div class="form-group">
+                                    <label for="origen">Origen</label>
+                                    <input id="origen" name="origen" type="text" placeholder="León" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="destino">Destino</label>
+                                    <input id="destino" name="destino" type="text" placeholder="Guanajuato" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="fecha">Fecha</label>
+                                    <input id="fecha" name="fecha" type="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="hora">Hora</label>
+                                    <input id="hora" name="hora" type="time" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="precio">Precio por persona</label>
+                                    <input id="precio" name="precio" type="number" min="0" placeholder="$50" required>
+                                    <p class="input-note">Establece el costo estimado por pasajero.</p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lugares">Asientos disponibles</label>
+                                    <input id="lugares" name="lugares" type="number" min="1" max="8" placeholder="3" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="descripcion">Descripción (opcional)</label>
+                                <textarea id="descripcion" name="descripcion" placeholder="Agrega detalles del viaje, punto de encuentro o recomendaciones."></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button class="btn-principal" type="submit">Publicar viaje</button>
+                                <a class="btn-neutro" href="dashboard.html">Cancelar</a>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="card">
+                        <h2>Vista previa de la ruta</h2>
+                        <div class="map-box preview-map">
+                            <div class="map-grid"></div>
+                            <div class="map-road road-a"></div>
+                            <div class="map-road road-b"></div>
+                            <span class="map-pin pin-a"></span>
+                            <span class="map-pin pin-b"></span>
+                            <span class="map-label label-a">Origen</span>
+                            <span class="map-label label-b">Destino</span>
+                            <div class="map-zoom">
+                                <button type="button">+</button>
+                                <button type="button">−</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

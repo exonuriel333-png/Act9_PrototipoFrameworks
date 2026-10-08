@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Solicitudes de viaje - CUMARA</title>
+        <link rel="icon" href="../FAVICON/favicon.ico">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/main.js" defer></script>
+    </head>
+<body>
+    <div class="app-shell">
+        <button class="mobile-toggle" aria-label="Abrir menú">☰</button>
+        <div class="overlay"></div>
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-mark">🚗</span>
+                <span>CUMARA</span>
+            </div>
+            <nav>
+                <div class="nav-list">
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">⌂</span>Inicio
+                    </a>
+                    <a class="nav-link" href="buscar-viajes.html">
+                        <span class="nav-icon">⌕</span>Buscar viaje
+                    </a>
+                    <a class="nav-link" href="publicar-viaje.html">
+                        <span class="nav-icon">＋</span>Publicar viaje
+                    </a>
+                    <a class="nav-link active" href="solicitudes-viaje.html">
+                        <span class="nav-icon">▣</span>Mis viajes
+                    </a>
+                    <a class="nav-link" href="notificaciones.html">
+                        <span class="nav-icon">♧</span>Notificaciones
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">●</span>Mi perfil
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">⚙</span>Configuración
+                    </a>
+                </div>
+                <div class="nav-separator"></div>
+                <div class="nav-bottom">
+                    <a class="nav-link" href="index.html">
+                        <span class="nav-icon">↪</span>Cerrar sesión
+                    </a>
+                </div>
+            </nav>
+        </aside>
+        <div class="main-wrap">
+            <header class="topbar">
+                <strong class="topbar-title">Solicitudes de viaje</strong>
+                <div class="topbar-actions">
+                    <button class="icon-btn" onclick="location.href='notificaciones.html'" aria-label="Notificaciones">♧</button>
+                    <div class="user-chip">
+                        <span class="avatar">C</span>
+                        <span class="user-meta">
+                            <strong>Nombre</strong>
+                            <small>Conductor ▾</small>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-head">
+                    <div>
+                        <h1>Solicitudes de pasajeros</h1>
+                        <p>Administra las solicitudes de tus viajes publicados.</p>
+                    </div>
+                </div>
+                <section class="card" data-tab-group>
+                    <div class="tabs">
+                        <button class="tab active" data-tab-button="pendientes">Pendientes</button>
+                        <button class="tab" data-tab-button="aceptadas">Aceptadas</button>
+                        <button class="tab" data-tab-button="rechazadas">Rechazadas</button>
+                    </div>
+                    <div data-tab-panel="pendientes">
+                        <article class="request-card">
+                            <div class="request-avatar">MR</div>
+                            <div>
+                                <strong>Nombre del pasajero</strong>
+                                <p class="trip-meta">Origen → Destino<br>Fecha y hora · Mensaje: “Hola, me gustaría reservar un lugar.”</p>
+                                <small>Hace 10 min</small>
+                            </div>
+                            <div class="request-actions">
+                                <button class="btn-neutro btn-small" onclick="this.closest('.request-card').remove()">Aceptar</button>
+                                <button class="btn-peligro btn-small" onclick="this.closest('.request-card').remove()">Rechazar</button>
+                            </div>
+                        </article>
+                        <article class="request-card">
+                            <div class="request-avatar">AM</div>
+                            <div>
+                                <strong>Otro pasajero</strong>
+                                <p class="trip-meta">León → Guanajuato<br>24/05/2026 · 8:00 a.m.</p>
+                                <small>Hace 25 min</small>
+                            </div>
+                            <div class="request-actions">
+                                <button class="btn-neutro btn-small" onclick="this.closest('.request-card').remove()">Aceptar</button>
+                                <button class="btn-peligro btn-small" onclick="this.closest('.request-card').remove()">Rechazar</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="hidden" data-tab-panel="aceptadas">
+                        <div class="alert success">2 solicitudes aceptadas para tu próximo viaje.</div>
+                    </div>
+                    <div class="hidden" data-tab-panel="rechazadas">
+                        <div class="alert">No hay solicitudes rechazadas en esta demostración.</div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

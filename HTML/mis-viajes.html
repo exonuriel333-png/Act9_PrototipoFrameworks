@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mis viajes - CUMARA</title>
+        <link rel="icon" href="../FAVICON/favicon.ico">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/main.js" defer></script>
+    </head>
+<body>
+    <div class="app-shell">
+        <button class="mobile-toggle" aria-label="Abrir menú">☰</button>
+        <div class="overlay"></div>
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-mark">🚗</span>
+                <span>CUMARA</span>
+            </div>
+            <nav>
+                <div class="nav-list">
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">⌂</span>Inicio
+                    </a>
+                    <a class="nav-link" href="buscar-viajes.html">
+                        <span class="nav-icon">⌕</span>Buscar viaje
+                    </a>
+                    <a class="nav-link" href="publicar-viaje.html">
+                        <span class="nav-icon">＋</span>Publicar viaje
+                    </a>
+                    <a class="nav-link active" href="mis-viajes.html">
+                        <span class="nav-icon">▣</span>Mis viajes
+                    </a>
+                    <a class="nav-link" href="notificaciones.html">
+                        <span class="nav-icon">♧</span>Notificaciones
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">●</span>Mi perfil
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">⚙</span>Configuración
+                    </a>
+                </div>
+                <div class="nav-separator"></div>
+                <div class="nav-bottom">
+                    <a class="nav-link" href="index.html">
+                        <span class="nav-icon">↪</span>Cerrar sesión
+                    </a>
+                </div>
+            </nav>
+        </side>
+        <div class="main-wrap">
+            <header class="topbar">
+                <strong class="topbar-title">Mis viajes</strong>
+                <div class="topbar-actions">
+                    <button class="icon-btn" onclick="location.href='notificaciones.html'" aria-label="Notificaciones">♧</button>
+                    <div class="user-chip">
+                        <span class="avatar">M</span>
+                        <span class="user-meta">
+                            <strong>Nombre</strong>
+                            <small>Pasajero ▾</small>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-head">
+                    <div>
+                        <h1>Mis viajes</h1>
+                        <p>Consulta tu historial y califica tus viajes.</p>
+                    </div>
+                </div>
+                <section class="card" data-tab-group>
+                    <div class="tabs">
+                        <button class="tab active" data-tab-button="proximos">Próximos</button>
+                        <button class="tab" data-tab-button="historial">Historial</button>
+                        <button class="tab" data-tab-button="calificaciones">Calificaciones</button>
+                    </div>
+                    <div data-tab-panel="proximos">
+                        <article class="my-trip">
+                            <img class="trip-thumb" src="../IMAGENE/leon-expiatorio.jpg" alt="Viaje León a Guanajuato">
+                            <div>
+                                <strong>León → Guanajuato</strong>
+                                <p class="trip-meta">Fecha: 24/05/2026 · Estado: Confirmado</p>
+                                <span class="status ok">Confirmado</span>
+                            </div>
+                            <div>
+                                <a class="btn-neutro btn-small" href="detalles-viaje.html">Ver detalles</a>
+                            </div>
+                        </article>
+                        <article class="my-trip">
+                            <img class="trip-thumb" src="../IMAGENE/leon-expiatorio.jpg" alt="Viaje León a San Miguel">
+                            <div>
+                                <strong>León → San Miguel</strong>
+                                <p class="trip-meta">Fecha: 01/06/2026 · Estado: Pendiente</p>
+                                <span class="status pending">Pendiente</span>
+                            </div>
+                            <div>
+                                <a class="btn-neutro btn-small" href="detalles-viaje.html">Ver detalles</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="hidden" data-tab-panel="historial">
+                        <article class="my-trip">
+                            <img class="trip-thumb" src="../IMAGENE/leon-expiatorio.jpg" alt="Viaje finalizado">
+                            <div>
+                                <strong>León → Silao</strong>
+                                <p class="trip-meta">Fecha: 27/04/2026 · Estado: Finalizado</p>
+                                <span class="status ok">Finalizado</span>
+                            </div>
+                            <div>
+                                <a class="btn-neutro btn-small" href="calificar-viaje.html">Calificar</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="hidden" data-tab-panel="calificaciones">
+                        <article class="my-trip">
+                            <div class="trip-thumb" aria-hidden="true">★</div>
+                            <div>
+                                <strong>León → Silao</strong>
+                                <p class="trip-meta">Tu calificación: 5 estrellas</p>
+                            </div>
+                            <div>
+                                <a class="btn-neutro btn-small" href="calificar-viaje.html">Ver</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

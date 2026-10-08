@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Buscar viajes - CUMARA</title>
+        <link rel="icon" href="../FAVICON/favicon.ico">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/main.js" defer></script>
+    </head>
+<body>
+    <div class="app-shell">
+        <button class="mobile-toggle" aria-label="Abrir menú">☰</button>
+        <div class="overlay"></div>
+    </div>
+    <aside class="sidebar">
+        <div class="brand">
+            <span class="brand-mark">🚗</span>
+            <span>CUMARA</span>
+        </div>
+        <nav>
+        <div class="nav-list">
+            <a class="nav-link" href="dashboard.html">
+            <span class="nav-icon">⌂</span>Inicio</a>
+            <a class="nav-link active" href="buscar-viajes.html">
+                <span class="nav-icon">⌕</span>Buscar viaje
+            </a>
+            <a class="nav-link" href="publicar-viaje.html">
+                <span class="nav-icon">＋</span>Publicar viaje
+            </a>
+            <a class="nav-link" href="mis-viajes.html">
+                <span class="nav-icon">▣</span>Mis viajes
+            </a>
+            <a class="nav-link" href="notificaciones.html">
+                <span class="nav-icon">♧</span>Notificaciones
+            </a>
+            <a class="nav-link" href="mi-perfil.html">
+                <span class="nav-icon">●</span>Mi perfil
+            </a>
+            <a class="nav-link" href="mi-perfil.html">
+                <span class="nav-icon">⚙</span>Configuración
+            </a>
+        </div>
+        <div class="nav-separator"></div>
+        <div class="nav-bottom">
+            <a class="nav-link" href="index.html">
+                <span class="nav-icon">↪</span>Cerrar sesión
+            </a>
+        </div>
+        </nav>
+    </aside>
+    <div class="main-wrap">
+        <header class="topbar">
+            <strong class="topbar-title">Buscar viaje</strong>
+            <div class="topbar-actions">
+                <button class="icon-btn" onclick="location.href='notificaciones.html'" aria-label="Notificaciones">♧</button>
+                <div class="user-chip">
+                    <span class="avatar">M</span>
+                    <span class="user-meta">
+                        <strong>Nombre</strong>
+                        <small>Pasajero ▾</small>
+                    </span>
+                </div>
+            </div>
+        </header>
+    <main class="page">
+        <div class="page-head">
+            <div>
+                <h1>Buscar viaje</h1>
+                <p>Encuentra la mejor opción para tu ruta.</p>
+            </div>
+        </div>
+        <section class="search-layout">
+        <div class="filters">
+            <h2>Filtros</h2>
+            <form id="searchForm">
+                <div class="filter-grid">
+                    <div class="form-group">
+                        <label for="origen">Origen</label>
+                        <select id="origen">
+                            <option value="">Todos</option>
+                            <option>León</option>
+                            <option>Guanajuato</option>
+                            <option>San Miguel</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="destino">Destino</label>
+                        <select id="destino">
+                            <option value="">Todos</option>
+                            <option>Guanajuato</option>
+                            <option>San Miguel</option>
+                            <option>Silao</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input type="date" id="fecha">
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora">
+                    </div>
+                </div>
+                <button class="btn-principal" type="submit">Buscar</button>
+            </form>
+        </div>
+        <div>
+            <div class="results-map-layout">
+                <section>
+                    <div class="card-head">
+                        <h2>Resultados</h2>
+                        <span id="searchStatus">3 resultado(s) encontrado(s).</span>
+                    </div>
+                    <div class="results">
+                        <article class="result-card" data-trip-result data-origin="león" data-destination="guanajuato" data-date="2026-05-24">
+                            <img class="trip-thumb" src="../IMAGENE/leon-expiatorio.jpg" alt="Viaje León a Guanajuato">
+                            <div class="result-info">
+                                <h3>León → Guanajuato</h3>
+                                <p>Sáb, 24 de mayo de 2026</p>
+                                <p>8:00 a.m. · 3 lugares disponibles</p>
+                            </div>
+                            <div class="result-side">
+                                <strong>$50</strong>
+                                <a class="btn-neutro btn-small" href="detalles-viaje.html">Ver detalles</a>
+                            </div>
+                        </article>
+                        <article class="result-card" data-trip-result data-origin="león" data-destination="san miguel" data-date="2026-06-01">
+                            <img class="trip-thumb" src="../IMAGENE/leon-expiatorio.jpg" alt="Viaje León a San Miguel">
+                            <div class="result-info">
+                                <h3>León → San Miguel</h3>
+                                <p>Dom, 1 de junio de 2026</p>
+                                <p>9:30 a.m. · 2 lugares disponibles</p>
+                            </div>
+                            <div class="result-side">
+                                <strong>$70</strong>
+                                <a class="btn-neutro btn-small" href="detalles-viaje.html">Ver detalles</a>
+                            </div>
+                        </article>
+                        <article class="result-card" data-trip-result data-origin="león" data-destination="silao" data-date="2026-05-27">
+                            <img class="trip-thumb" src="../IMAGENE/leon-expiatorio.jpg" alt="Viaje León a Silao">
+                            <div class="result-info">
+                                <h3>León → Silao</h3>
+                                <p>Mar, 27 de mayo de 2026</p>
+                                <p>10:00 a.m. · 4 lugares disponibles</p>
+                            </div>
+                            <div class="result-side">
+                                <strong>$40</strong>
+                                <a class="btn-neutro btn-small" href="detalles-viaje.html">Ver detalles</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="card">
+                    <h2>Mapa</h2>
+                    <div class="map-box">
+                        <div class="map-grid"></div>
+                        <div class="map-road road-a"></div>
+                        <div class="map-road road-b"></div>
+                        <span class="map-pin pin-a"></span>
+                        <span class="map-pin pin-b"></span>
+                        <div class="map-zoom">
+                            <button type="button">+</button>
+                            <button type="button">−</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        </section>
+    </main>
+    </div>
+</body>
+</html>

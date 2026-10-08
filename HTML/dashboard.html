@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel principal - CUMARA</title>
+    <link rel="icon" href="../FAVICON/favicon.ico">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/main.js" defer></script>
+</head>
+<body>
+    <div class="app-shell">
+        <button class="mobile-toggle" aria-label="Abrir menú">☰</button>
+        <div class="overlay">
+        </div>
+        <aside class="sidebar">           
+            <div class="brand">
+                <span class="brand-mark">🚗</span>
+                <span>CUMARA</span>
+            </div>
+            <nav aria-label="Navegación principal">
+                <div class="nav-list">
+                    <a class="nav-link active" href="dashboard.html">
+                        <span class="nav-icon">⌂</span>Inicio
+                    </a>
+                    <a class="nav-link" href="buscar-viajes.html">
+                        <span class="nav-icon">⌕</span>Buscar viaje
+                    </a>
+                    <a class="nav-link" href="publicar-viaje.html">
+                        <span class="nav-icon">＋</span>Publicar viaje
+                    </a>
+                    <a class="nav-link" href="mis-viajes.html">
+                        <span class="nav-icon">▣</span>Mis viajes
+                    </a>
+                    <a class="nav-link" href="notificaciones.html">
+                        <span class="nav-icon">♧</span>Notificaciones
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">●</span>Mi perfil
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">⚙</span>Configuración
+                    </a>
+                </div>
+                <div class="nav-separator"></div>
+                <div class="nav-bottom">
+                    <a class="nav-link" href="index.html">
+                        <span class="nav-icon">↪</span>Cerrar sesión
+                    </a>
+                </div>
+            </nav>
+        </aside>
+        <div class="main-wrap">
+            <header class="topbar">
+                <strong class="topbar-title">Panel principal</strong>
+                <div class="topbar-actions">
+                    <button class="icon-btn" onclick="location.href='notificaciones.html'" aria-label="Notificaciones">♧</button>
+                    <div class="user-chip">
+                        <span class="avatar">M</span>
+                        <span class="user-meta">
+                            <strong>Nombre</strong>
+                            <small>Pasajero ▾</small>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-head">
+                    <div>
+                        <h1>¡Bienvenido!</h1>
+                        <p>Tu próxima aventura comienza aquí.</p>
+                    </div>
+                </div>
+                <section class="quick-grid" aria-label="Acciones rápidas">
+                    <a class="quick-card" href="buscar-viajes.html">
+                        <div class="quick-icon">⌕</div>
+                        <strong>Buscar viaje</strong>
+                        <span>Encuentra una ruta</span>
+                    </a>
+                    <a class="quick-card" href="publicar-viaje.html">
+                        <div class="quick-icon">⊞</div>
+                        <strong>Publicar viaje</strong>
+                        <span>Comparte tu ruta</span>
+                    </a>
+                    <a class="quick-card" href="mis-viajes.html">
+                        <div class="quick-icon">▣</div>
+                        <strong>Mis viajes</strong>
+                        <span>Consulta tus viajes</span>
+                    </a>
+                    <a class="quick-card" href="calificar-viaje.html">
+                        <div class="quick-icon">☆</div>
+                        <strong>Calificaciones</strong>
+                        <span>Valora tu experiencia</span>
+                    </a>
+                </section>
+                <div class="layout-two">
+                    <section class="card">
+                        <div class="card-head">
+                            <h2>Viajes recomendados</h2>
+                            <a href="buscar-viajes.html">Ver todos →</a>
+                        </div>
+                        <div class="trip-list">
+                            <article class="trip-card">
+                                <img class="trip-thumb" src="../IMAGENE/leon-expiatorio.jpg" alt="Ruta León a Guanajuato">
+                                <div>
+                                    <div class="trip-title">León → Guanajuato</div>
+                                    <div class="trip-meta">Sáb, 24 de mayo de 2026 · 8:00 a.m.<br>3 lugares disponibles</div>
+                                </div>
+                                <div class="trip-price">$50</div>
+                            </article>
+                            <article class="trip-card">
+                                <img class="trip-thumb" src="../IMAGENE/leon-expiatorio.jpg" alt="Ruta León a San Miguel">
+                                <div>
+                                    <div class="trip-title">León → San Miguel</div>
+                                    <div class="trip-meta">Dom, 1 de junio de 2026 · 9:30 a.m.<br>2 lugares disponibles</div>
+                                </div>
+                                <div class="trip-price">$70</div>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <div class="card-head">
+                            <h2>Mapa rápido</h2>
+                            <a href="buscar-viajes.html">Explorar</a>
+                        </div>
+                        <div class="map-box">
+                            <div class="map-grid"></div>
+                            <div class="map-road road-a"></div>
+                            <div class="map-road road-b"></div>
+                            <span class="map-pin pin-a"></span>
+                            <span class="map-pin pin-b"></span>
+                            <span class="map-label label-a">León</span>
+                            span class="map-label label-b">Guanajuato</span>
+                            <div class="map-zoom">
+                                <button type="button">+</button>
+                                <button type="button">−</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

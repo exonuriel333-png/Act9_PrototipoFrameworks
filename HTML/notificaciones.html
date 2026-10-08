@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notificaciones - CUMARA</title>
+        <link rel="icon" href="../FAVICON/favicon.ico">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/main.js" defer></script>
+    </head>
+<body>
+    <div class="app-shell">
+        <button class="mobile-toggle" aria-label="Abrir menú">☰</button>
+        <div class="overlay"></div>
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-mark">🚗</span>
+                <span>CUMARA</span>
+            </div>
+            <nav>
+                <div class="nav-list">
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">⌂</span>Inicio
+                    </a>
+                    <a class="nav-link" href="buscar-viajes.html">
+                        <span class="nav-icon">⌕</span>Buscar viaje
+                    </a>
+                    <a class="nav-link" href="publicar-viaje.html">
+                        <span class="nav-icon">＋</span>Publicar viaje
+                    </a>
+                    <a class="nav-link" href="mis-viajes.html">
+                        <span class="nav-icon">▣</span>Mis viajes
+                    </a>
+                    <a class="nav-link active" href="notificaciones.html">
+                        <span class="nav-icon">♧</span>Notificaciones
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">●</span>Mi perfil
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">⚙</span>Configuración
+                    </a>
+                </div>
+                <div class="nav-separator"></div>
+                <div class="nav-bottom">
+                    <a class="nav-link" href="index.html">
+                        <span class="nav-icon">↪</span>Cerrar sesión
+                    </a>
+                </div>
+            </nav>
+        </aside>
+        <div class="main-wrap">
+            <header class="topbar">
+                <strong class="topbar-title">Notificaciones</strong>
+                <div class="topbar-actions">
+                    <div class="user-chip">
+                        <span class="avatar">M</span>
+                        <span class="user-meta">
+                            <strong>Nombre</strong>
+                            <small>Pasajero ▾</small>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="page-head">
+                    <div>
+                        <h1>Notificaciones</h1>
+                        <p>Consulta las novedades de tus viajes.</p>
+                    </div>
+                    <button class="btn-neutro btn-small" type="button" onclick="document.querySelectorAll('.notification-item').forEach(n=>n.classList.add('read'))">Marcar todas como leídas</button>
+                </div>
+                <section class="card">
+                    <div class="notification-list">
+                        <article class="notification-item">
+                            <span class="notification-dot"></span>
+                            <div>
+                                <strong>Tu reserva fue confirmada</strong>
+                                <p class="trip-meta">Tu viaje León → Guanajuato quedó confirmado.</p>
+                            </div>
+                            <time>Hace 5 min</time>
+                        </article>
+                        <article class="notification-item">
+                            <span class="notification-dot"></span>
+                            <div>
+                                <strong>Juan Pérez solicitó unirse</strong>
+                                <p class="trip-meta">Hay una nueva solicitud pendiente de revisión.</p>
+                            </div>
+                            <time>Hace 25 min</time>
+                        </article>
+                        <article class="notification-item">
+                            <span class="notification-dot"></span>
+                            <div>
+                                <strong>Tu viaje está por comenzar</strong>
+                                <p class="trip-meta">Recuerda revisar el punto de encuentro.</p>
+                            </div>
+                            <time>Hace 1 h</time>
+                        </article>
+                        <article class="notification-item">
+                            <span class="notification-dot"></span>
+                            <div>
+                                <strong>María López canceló su solicitud</strong>
+                                <p class="trip-meta">La disponibilidad de tu viaje se actualizó.</p>
+                            </div>
+                            <time>Hace 3 h</time>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

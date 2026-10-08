@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Detalles del viaje - CUMARA</title>
+        <link rel="icon" href="../FAVICON/favicon.ico">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/main.js" defer></script>
+    </head>
+<body>
+    <div class="app-shell">
+        <button class="mobile-toggle" aria-label="Abrir menú">☰</button>
+        <div class="overlay"></div>
+        <aside class="sidebar">
+            <div class="brand">
+                <span class="brand-mark">🚗</span>
+                <span>CUMARA</span>
+            </div>
+            <nav>
+                <div class="nav-list">
+                    <a class="nav-link" href="dashboard.html">
+                        <span class="nav-icon">⌂</span>Inicio
+                    </a>
+                    <a class="nav-link active" href="buscar-viajes.html">
+                        <span class="nav-icon">⌕</span>Buscar viaje
+                    </a>
+                    <a class="nav-link" href="publicar-viaje.html">
+                        <span class="nav-icon">＋</span>Publicar viaje
+                    </a>
+                    <a class="nav-link" href="mis-viajes.html">
+                        <span class="nav-icon">▣</span>Mis viajes
+                    </a>
+                    <a class="nav-link" href="notificaciones.html">
+                        <span class="nav-icon">♧</span>Notificaciones
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">●</span>Mi perfil
+                    </a>
+                    <a class="nav-link" href="mi-perfil.html">
+                        <span class="nav-icon">⚙</span>Configuración
+                    </a>
+                </div>
+                <div class="nav-separator"></div>
+                <div class="nav-bottom">
+                    <a class="nav-link" href="index.html">
+                        <span class="nav-icon">↪</span>Cerrar sesión
+                    </a>
+                </div>
+            </nav>
+        </aside>
+        <div class="main-wrap">
+            <header class="topbar">
+                <strong class="topbar-title">Detalles del viaje</strong>
+                <div class="topbar-actions">
+                    <button class="icon-btn" onclick="location.href='notificaciones.html'" aria-label="Notificaciones">♧</button>
+                    <div class="user-chip">
+                        <span class="avatar">M</span>
+                        <span class="user-meta">
+                            <strong>Nombre</strong>
+                            <small>Pasajero ▾</small>
+                        </span>
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="breadcrumb">
+                    <a href="buscar-viajes.html">← Volver</a>
+                </div>
+                <div class="page-head">
+                    <div>
+                        <h1>Detalles del viaje</h1>
+                        <p>Consulta la ruta, el conductor y las condiciones del viaje.</p>
+                    </div>
+                </div>
+                <div class="details-grid">
+                    <section class="card">
+                        <h2>Información de ruta</h2>
+                        <div class="detail-list">
+                            <div class="detail-row">
+                                <span class="detail-icon">⌖</span>
+                                <span class="detail-label">Origen</span>
+                                <strong>León, Gto.</strong>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-icon">⌖</span>
+                                <span class="detail-label">Destino</span>
+                                <strong>Guanajuato, Gto.</strong>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-icon">▣</span>
+                                <span class="detail-label">Fecha</span>
+                                <strong>Sáb, 24 de mayo de 2026</strong>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-icon">◷</span>
+                                <span class="detail-label">Hora</span>
+                                <strong>8:00 a.m.</strong>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-icon">♙</span>
+                                <span class="detail-label">Lugares disponibles</span>
+                                <strong>3 lugares</strong>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-icon">$</span>
+                                <span class="detail-label">Precio por persona</span>
+                                <strong>$50</strong>
+                            </div>
+                        </div>
+                        <div class="driver-box">
+                            <div class="driver-avatar">JP</div>
+                            <div class="driver-info">
+                                <h3>Información del conductor</h3>
+                                <p>
+                                    <strong>Nombre:</strong> Juan Pérez
+                                </p>
+                                <p>
+                                    <strong>Calificación:</strong> 4.8 / 5
+                                </p>
+                                <p>
+                                    <strong>Vehículo:</strong> Nissan Versa
+                                </p>
+                            </div>
+                        </div>
+                        <div class="detail-actions">
+                            <button class="btn-principal" type="button" data-modal-open="#reserveModal">Reservar</button>
+                            <button class="btn-secundario" type="button" data-modal-open="#contactModal">Contactar</button>
+                        </div>
+                    </section>
+                    <section class="card">
+                        <h2>Mapa</h2>
+                        <div class="map-box">
+                            <div class="map-grid"></div>
+                            <div class="map-road road-a"></div>
+                            <div class="map-road road-b"></div>
+                            <span class="map-pin pin-a"></span>
+                            <span class="map-pin pin-b"></span>
+                            <span class="map-label label-a">León</span>
+                            <span class="map-label label-b">Guanajuato</span>
+                            <div class="map-zoom">
+                                <button type="button">+</button>
+                                <button type="button">−</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="reserveModal">
+        <div class="modal">
+            <div class="modal-head">
+                <h2>Reservar viaje</h2>
+                <button class="icon-btn" type="button" data-modal-close>×</button>
+            </div>
+            <p>Se simulará una reservación para León → Guanajuato por 
+                <strong>$50</strong>.
+            </p>
+            <div class="form-actions">
+                <a class="btn-principal" href="mis-viajes.html">Confirmar reserva
+                </a>
+                <button class="btn-neutro" data-modal-close type="button">Cancelar</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-backdrop" id="contactModal">
+        <div class="modal">
+            <div class="modal-head">
+                <h2>Contactar conductor</h2>
+                <button class="icon-btn" type="button" data-modal-close>×</button>
+            </div>
+            <p>Contacto de demostración: 
+                <strong>Juan Pérez</strong>. En una versión con backend se conectaría el sistema de mensajería.
+            </p>
+            <div class="form-actions">
+                <button class="btn-principal" type="button" data-modal-close>Entendido</button>
+            </div>
+        </div>
+    </div>
+    <script>document.addEventListener('DOMContentLoaded',()=>{document.querySelectorAll('[data-modal-open]').forEach(b=>b.addEventListener('click',()=>document.querySelector(b.dataset.modalOpen)?.classList.add('show')));document.querySelectorAll('[data-modal-close]').forEach(b=>b.addEventListener('click',()=>b.closest('.modal-backdrop')?.classList.remove('show')));});</script>
+</body>
+</html>
