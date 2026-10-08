@@ -5,9 +5,9 @@ CUMARA es una aplicación web responsiva diseñada para coordinar viajes compart
 
 ## Integrantes y Roles
 * Axel Aaron Cortés Ramírez**: [Tu Rol, ej. Coordinador y Documentación]
-* [Exon Uriel Estrada Calderón]**: [Rol, ej. Desarrollador Front-End 1]
-* [Miguel Angel Piña Ramirez]**: [Rol, ej. Desarrollador Front-End 2]
-* [Carlos Roberto Manriquez Vazquez]**: [Rol, ej. Lider agil]
+* Exon Uriel Estrada Calderón**: [Rol, ej. Desarrollador Front-End 1]
+* Miguel Angel Piña Ramirez**: [Rol, ej. Desarrollador Front-End 2]
+* Carlos Roberto Manriquez Vazquez**: [Rol, ej. Lider agil]
 
 ## Vistas
 1. index.html - Inicio de sesión
